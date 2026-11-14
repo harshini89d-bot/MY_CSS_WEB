@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Design Company</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #666;
+    line-height: 1.7;
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 25px 0;
+}
+.design-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.design-section img {
+    width: 40%;
+    height: 170px;
+    object-fit: cover;
+    border: 7px solid #9eae39;
+}
+.design-text {
+    flex: 1;
+}
+.design-text h2 {
+    color: #929c3b;
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.design-text p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.design-text a {
+    color: #929c3b;
+    text-decoration: none;
+    font-size: 17px;
+}
+.design-text a:hover {
+    text-decoration: underline;
+}
+hr {
+    border: none;
+    border-top: 1px solid #c7c6c6;
+    margin: 45px ;
+}
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    margin-bottom: 40px;
+}
+.info-box {
+    padding: 10px;
+}
+.info-box:first-child {
+    border-right: 1px solid #ddd;
+}
+
+.info-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.info-heading img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+.info-heading h2 {
+    color: #333;
+    font-size: 35px;
+    font-weight: normal;
+}
+.info-box p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.info-box ul {
+    list-style: none;
+    padding-left: 15px;
+}
+.info-box ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.info-box ul li::before {
+    content: "🪸 ";
+    color: #333;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.projects {
+    margin-bottom: 40px;
+}
+.projects h2 {
+    color: #333;
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+.project-gallery img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border: 6px solid #ccc;
+    padding: 2px;
+}
+.project-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #929c3b;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.project-link:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .design-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .design-section img {
+        width: 100%;
+    }
+    .information {
+        grid-template-columns: 1fr;
+    }
+    .info-box:first-child {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 25px;
+    }
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+    .info-heading h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Web Design Company</h1>
+    <section class="design-section">
+        <img src="../MY_WEBSITE/image/design blog.jpg" alt="Design Blog">
+        <div class="design-text">
+            <h2>Duis vitae velit sed dui malesuada</h2>
+            <p>
+            Sliquet ligula. Maecenas adipiscing um ipsum.
+            Pellentesque vitae magna. Suspendisse a nibh
+            tristique jus us volutpat. Suspos endisse vitae
+            neque eget ante.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+    <section class="design-section">
+        <img src="../MY_WEBSITE/image/fruits.jpg"  alt="Fruit Website">
+        <div class="design-text">
+            <h2>Savitae velit sed dui malesu donec</h2>
+            <p>
+            Maecenas adipiscing elementum ipsum.
+            Lentesque vitae magna. Sed nec est.
+            Suspendisse a nibh tristique justo
+            rhoncus volutpat. Endisse vitae neque eget ante.
+            </p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+    <hr>
+    <section class="information">
+        <div class="info-box">
+            <div class="info-heading">
+                <img src="../MY_WEBSITE/image/letter.png"alt="Document Icon">
+                <h2>Why Us?</h2>
+            </div>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nunc quis sem nec tellus
+            blandit tincidunt. Duis vitae velit sed dui.
+            </p>
+            <ul>
+                <li>Smalesuada dignissim</li>
+                <li>Donec mollis aliquet ligula</li>
+                <li>Maecenas adipiscin</li>
+            </ul>
+        </div>
+        <div class="info-box">
+            <div class="info-heading">
+                <img src="../MY_WEBSITE/image/star.png"alt="Standards Icon">
+                <h2>Standards</h2>
+            </div>
+            <p>
+            Nunc quis sem nec tellus blandit tincidunt.
+            Du vitae velit sed dui malesuada dignissim.
+            Don lis aliquet ligula. Maecenas adipiscing.
+            </p>
+            <ul>
+                <li>Pellentesque vitae magna</li>
+                <li>Suspendisse suspendisse vitae</li>
+                <li>Pellentesque dolormula</li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section class="projects">
+        <h2>Web Projects</h2>
+        <div class="project-gallery">
+            <img src="../MY_WEBSITE/image/web 1.png"alt="Web Project 1">
+            <img src="../MY_WEBSITE/image/web 2.jpg" alt="Web Project 2">
+            <img src="../MY_WEBSITE/image/web 3"alt="Web Project 3">
+        </div>
+        <a href="#" class="project-link">View All Projects</a>
+    </section>
+</div>
+</body>
+</html>
